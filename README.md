@@ -1,3 +1,21 @@
+# Tenzies game (Dice game)
+## This game has been built with react by following along with "Learn React" course at Scrimba, but with added extra features such as:
+- Using real dots instead of numbers.
+- Using rolls tracker.
+- Tracking the time it takes to win
+- Save the best time to localStorage (Browser API) to keep data until it cleared from the browser.
+
+### Building this game will refresh all the knowledge of react basics, such as Functional Components, using high order functions of Javascipt, ES6 syntax, and React hooks sucb as useState and useEffect.
+
+## Screenshot of the game
+![Tenzies Game](https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/62c5b1f67c7d781c26f7082c/screenshot_2022-07-06-16-02-54-0000.png)
+
+
+## Live Demo of the game
+ [https://tenzies-game-with-react.netlify.app/](https://tenzies-game-with-react.netlify.app/)
+
+ <br>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
