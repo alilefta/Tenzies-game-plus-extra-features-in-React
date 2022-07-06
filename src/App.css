@@ -1,38 +1,143 @@
+:root {
+	--karla: "Karla", sans-serif;
+	--Inter: "Inter", sans-serif;
+}
+* {
+	box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+	text-align: center;
+	background-color: #0b2434;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 500px;
+	height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tenzies--container {
+	margin: 0 auto;
+	width: 400px;
+	max-height: 900px;
+	background-color: #f5f5f5;
+	border-radius: 10px;
+	padding: 5px 10px;
+	display: flex;
+	/* justify-content: center; */
+	flex-direction: column;
+	align-items: center;
+}
+.tenzies--container > h1 {
+	font-family: var(--karla);
+	font-weight: 700;
+	font-size: 28px;
+	color: #0b2434;
+}
+.tenzies--container > p {
+	width: 80%;
+	font-family: var(--Inter);
+	color: #4a4e74;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.tenzies--container > .dices {
+	margin-top: 20px;
+	/* width: 70%; */
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(2, 1fr);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.tenzies--container .roll-dice {
+	background-color: #5035ff;
+	min-width: 95px;
+	height: 40px;
+	border-radius: 5px;
+	color: #ffffff;
+	box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+	font-family: var(--karla);
+	font-weight: 700;
+	font-size: 1.2em;
+	/*  */
+	cursor: pointer;
+}
+.tenzies--container .roll-dice:focus {
+	outline: none;
+}
+.tenzies--container .roll-dice:active {
+	box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
 }
 
-.App-link {
-  color: #61dafb;
+.tenzies--container > .dices .die--face {
+	font-family: var(--karla);
+	font-weight: 700;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+	width: 50px;
+	height: 50px;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	cursor: pointer;
+	align-items: center;
+	justify-items: center;
+	align-items: center;
+	padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tenzies--container > .best-time {
+	font-family: var(--karla);
+	font-weight: 700;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	padding: 2px;
+	border-radius: 5px;
+}
+
+.tenzies--container > .dices .die--face > span {
+	display: block;
+}
+
+.tenzies--container > .dices .die--face > h2 {
+	font-size: 2rem;
+	margin: 0;
+}
+
+.dot {
+	width: 12px;
+	border-radius: 50%;
+	height: 12px;
+	background-color: black;
+}
+.tenzies--container > .lower {
+	margin: 30px 0 0 0;
+	width: 75%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.tenzies--container > .lower > .rolls--num {
+	max-width: 100px;
+	min-width: 80px;
+	width: 82px;
+	padding: 0 20px;
+	color: #0b2434;
+	font-family: var(--karla);
+	font-weight: 700;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	/* padding: 2px; */
+}
+
+.tenzies--container > .lower > .timeRequired {
+	max-width: 100px;
+	min-width: 80px;
+	width: 82px;
+	color: #0b2434;
+	font-family: var(--karla);
+	font-weight: 700;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	padding: 2px;
+	border-radius: 5px;
 }
